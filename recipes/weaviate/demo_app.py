@@ -3,8 +3,6 @@ import time
 import sys
 import os
 import base64
-from st_weaviate_connection import WeaviateConnection, WeaviateFilter
-from weaviate.classes.query import Filter
 
 # Constants
 ENV_VARS = ["WEAVIATE_URL", "WEAVIATE_API_KEY", "COHERE_API_KEY"]
