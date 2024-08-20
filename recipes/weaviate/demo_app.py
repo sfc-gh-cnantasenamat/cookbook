@@ -61,15 +61,6 @@ def setup_sidebar():
 
     return mode, year_range
 
-def setup_weaviate_connection(env_vars):
-    """Setup Weaviate connection"""
-    return st.connection(
-        "weaviate",
-        type=WeaviateConnection,
-        url=env_vars["WEAVIATE_URL"],
-        api_key=env_vars["WEAVIATE_API_KEY"],
-        additional_headers={"X-Cohere-Api-Key": env_vars["COHERE_API_KEY"]},
-    )
 
 def display_example_prompts():
     """Display example prompt buttons"""
