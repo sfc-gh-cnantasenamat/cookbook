@@ -115,8 +115,5 @@ def main():
         # Placeholder for search results
         st.write("Search results would appear here.")
 
-    if example_selected:
-        st.rerun()
-
 if __name__ == "__main__":
     main()
